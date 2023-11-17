@@ -1,0 +1,21 @@
+{
+  "name": "update-version-script",
+  "version": "1.0.33",
+  "description": "A script to programmatically update version numbers in package.json",
+  "main": "update-version.js",
+  "bin": {
+    "update-version": "./update-version.js"
+  },
+  "scripts": {
+    "postinstall": "node postinstall-script",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-version": "node update-version"
+  },
+  "keywords": [
+    "npm",
+    "version",
+    "update"
+  ],
+  "author": "",
+  "license": "MIT"
+}
