@@ -1,15 +1,15 @@
 {
-  "name": "update-version-script",
-  "version": "1.0.33",
+  "name": "xp-update-version-script",
+  "version": "1.0.34",
   "description": "A script to programmatically update version numbers in package.json",
   "main": "update-version.js",
   "bin": {
-    "update-version": "./update-version.js"
+    "update-version": "update-version.js"
   },
   "scripts": {
     "postinstall": "node postinstall-script",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "update-version": "node node_modules/update-version-script/update-version"
+    "update-version": "node update-version"
   },
   "keywords": [
     "npm",
@@ -19,5 +19,8 @@
   "author": "einstein23Waf <einstein.wafula@gmail.com>",
   "license": "MIT",
   "private": false,
-  "repository": "https://github.com/einstein23Waf/xp-update-version-script.git"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/einstein23Waf/xp-update-version-script.git"
+  }
 }
