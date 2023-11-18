@@ -14,7 +14,7 @@ const project_package_json = JSON.parse(
 
 project_package_json.scripts = project_package_json.scripts || {};
 project_package_json.scripts["update-version"] =
-  "node node_modules/update-version-script/update-version";
+  "node node_modules/xp-update-version-script/update-version";
 
 // Write the update package.json back toi the project
 fs.writeFileSync(
