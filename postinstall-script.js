@@ -1,3 +1,12 @@
+/**
+ * @file Deprecated: This file is deprecated and will be removed in future releases.
+ * Please use the alternative module/file: [AlternativeModuleName]
+ *
+ * [Additional information about why it's deprecated and any relevant details]
+ */
+
+// Rest of the existing code
+
 const fs = require("fs");
 const path = require("path");
 
