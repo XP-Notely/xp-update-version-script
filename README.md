@@ -1,37 +1,40 @@
-# Package.json Version Updater
+# xp-update-version-script
 
-## Overview
+[![npm version](https://badge.fury.io/js/xp-update-version-script.svg)](https://www.npmjs.com/package/xp-update-version-script)
 
-This script provides a simple and convenient way to programmatically update version numbers in your `package.json` file. Whether you are releasing a new version manually or as part of an automated CI/CD pipeline, this script can help you streamline the versioning process.
+A script to programmatically update version numbers in `package.json`.
+
+## Installation
+
+Install the package globally using Yarn:
+
+```bash
+yarn global add xp-update-version-script
+```
 
 ## Usage
 
-1. Ensure Node.js is installed on your machine.
+After installing the package globally, you can run the update-version command in any project. The script increments the patch version in the package.json file.
 
-2. Install the script globally using npm:
+## Adding to package.json
 
-   ```bash
-   npm install xp-update-version-script
-   ```
+To use the update-version script as a npm script in your project, add the following to your package.json:
 
-3. Navigate to your project directory containing the `package.json` file.
+```Json
 
-4. Run the following command to update the version:
+{
+  "scripts": {
+    "update-version": "update-version"
+  },
+  // ... other fields ...
+}
 
-   ```bash
-   xp-update-version-script <version-type>
-   ```
+```
 
-   Replace `<version-type>` with one of the following options:
-
-   - `patch`: Increment for bug fixes.
-   - `minor`: Increment for backward-compatible feature additions.
-   - `major`: Increment for backward-incompatible changes.
-
-5. The script will automatically update the version in the `package.json` file, and you can commit the changes to your version control system.
-
-## Example
+Now, you can run the script using:
 
 ```bash
-xp-update-version-script patch
+
+yarn run update-version
+
 ```

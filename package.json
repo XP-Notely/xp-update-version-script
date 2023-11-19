@@ -1,6 +1,6 @@
 {
   "name": "xp-update-version-script",
-  "version": "1.0.37",
+  "version": "1.0.38",
   "preferGlobal": true,
   "description": "A script to programmatically update version numbers in package.json",
   "main": "update-version.js",
